@@ -24,17 +24,15 @@
 
 
 
-// Link is a basic navigation component, while NavLink extends Link with additional features for styling and handling the "active" state, making it suitable for navigation menus with dynamic styles.
-
 // import { Link } from "react-router-dom";
 
 // const MainHeader = () => {
-//     return(
-//         <ul>
-//             <li>
-//                 <Link to="/Product">Product</Link>
-//             </li>
-//             <li>
+    //     return(
+        //         <ul>
+        //             <li>
+        //                 <Link to="/Product">Product</Link>
+        //             </li>
+        //             <li>
 //                 <Link to="/Welcome">Welcome</Link>
 //             </li>
 //         </ul>
@@ -59,15 +57,15 @@ import { NavLink } from "react-router-dom";
 import classes from './MainHeader.module.css'
 
 const MainHeader = () => {
-  return (
-    <header className={classes.header}>
+    return (
+        <header className={classes.header}>
       <nav>
         <ul>
           <li>
-            <NavLink activeClassName={classes.active} to="/Product">Product</NavLink>
+            <NavLink activeClassName={classes.active} to="/product">Product</NavLink>
           </li>
           <li>
-            <NavLink activeClassName={classes.active} to="/Welcome">Welcome</NavLink>
+            <NavLink activeClassName={classes.active} to="/welcome">Welcome</NavLink>
           </li>
         </ul>
       </nav>
@@ -76,3 +74,14 @@ const MainHeader = () => {
 };
 
 export default MainHeader;
+
+
+
+
+
+
+
+
+
+// Link is a basic navigation component, while NavLink extends Link with additional features for styling and handling the "active" state, 
+// making it suitable for navigation menus with dynamic styles.
